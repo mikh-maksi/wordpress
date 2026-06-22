@@ -1,0 +1,46 @@
+/*
+Theme Name: Simple Theme
+Theme URI: https://example.com
+Author: Your Name
+Author URI: https://example.com
+Description: Проста тема WordPress для початку роботи.
+Version: 1.0
+License: GNU General Public License v2 or later
+Text Domain: simple-theme
+*/
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #333;
+}
+
+header,
+footer {
+    background: #222;
+    color: #fff;
+    padding: 20px;
+}
+
+header a,
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+}
+
+article {
+    margin-bottom: 40px;
+}
+
+h1,
+h2 {
+    margin-top: 0;
+}
