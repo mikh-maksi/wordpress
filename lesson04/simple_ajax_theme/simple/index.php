@@ -15,6 +15,8 @@
     <h2>Заголовок сторінки</h2>
     <p id="header"></p>
     <p id="additional"></p>
+    <h2>Контент сторінки</h2>
+    <p id="content"></p>
 
     <h2>Перелік сторінок</h2>
     <p id="page_list"></p>
@@ -48,6 +50,7 @@ fetch(
     console.log(data);
     header.innerHTML=data[0].title.rendered;
     additional.innerHTML = data[0].acf.dodatkovo;
+    content.innerHTML = data[0].content.rendered;
   });
 
 
@@ -64,9 +67,11 @@ fetch('http://localhost/wordpress/wp-json/wp/v2/posts')
         page_list.appendChild(d);
 
         let a = document.createElement("a");
+        let da = document.createElement("div");
         a.href = element.guid.rendered;
         a.textContent = element.title.rendered;
-        a_list.appendChild(a);
+        da.appendChild(a)
+        a_list.appendChild(da);
 
     });
     });
