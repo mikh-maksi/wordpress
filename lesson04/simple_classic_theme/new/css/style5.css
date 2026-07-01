@@ -1,0 +1,86 @@
+.navbar-nav {
+	position: absolute;
+	margin-right: 200px;
+	width: 100%;
+}
+.dropdown-menu {
+	background-color: black;
+	
+}
+.dropdown-menu > li > a {
+	color: #636363;
+}
+span#doc_time {
+padding-top: 14px !important;
+margin-left: -80px !important;
+color: #636363;
+position: absolute !important;
+font-family: "Georgia";
+font-style: italic;
+}
+.navbar-inverse.navbar-nav > li > a {
+	color: #636363 !important;
+}
+.mail > p {
+	color: #636363;
+}
+ .mail > p, a {
+	color: #636363;
+}
+a:hover {
+	color: white !important;
+}
+.mail {
+	padding-top: 16px;
+	padding-left: 920px;
+}
+p, li {
+	font-family: "Georgia";
+	font-style: italic;
+}
+.container2 {
+	background-color: #2f2f2f;
+	margin-top: -20px;
+	height: 250px;
+}
+.logo {
+	margin-left: 320px;
+	margin-top: 60px;
+}
+.img {
+	margin-left: 60px;
+	margin-top: 50px;
+}
+.container4 {
+	background-color: #eae9e4;
+	height: 400px;
+	position: relative;
+	z-index: 1;
+}
+.container4 > p {
+	margin-left: 620px;
+}
+.container5 {
+	background-color: f8f8f8;
+	height:100%;
+	position: relative;
+	z-index: 1;
+}
+.container5 > p {
+	margin-left: 620px;
+}
+.container7 {
+	position: relative;
+	z-index: 2;
+	margin-top: -520px;
+}
+.nav-tabs > a:hover {
+	background-color: black;
+}
+.nav-tabs > li > a {
+font-family: Helvetica;
+}
+.nav-tabs > li{
+	
+	margin-left: 17px;
+}
