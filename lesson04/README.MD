@@ -162,7 +162,9 @@ fetch('http://localhost/wordpress/wp-json/wp/v2/posts')
 						<p>	Нажаль, немає записів, що задовільняють критеріям </p>
 				<?php endif; ?>
 ```
+
 ### Меню
+
 ```
 <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
 ```
@@ -170,23 +172,28 @@ fetch('http://localhost/wordpress/wp-json/wp/v2/posts')
 
 
 ### Підключення сайдбару
+
 ```
 <?php dynamic_sidebar('sidebar2') ?>
 ```
 
 
 ### Підключення картинки
+
 ```
 <img src = "<?php echo get_bloginfo('template_url'); ?>/images/img.png">
 ```
 
 ### Вивденення заголовку сторінки
+
 ```
 					<h2><?php echo wp_title("", true); ?></h2>
 ```
 
 
 ### Активація сайдбару та меню в файлі functions.php
+
+```
 <?php
   register_sidebar(array('name'=>'sidebar1'));
   register_sidebar(array('name'=>'sidebar2'));
@@ -200,3 +207,4 @@ if (function_exists('register_nav_menus'))
 	add_action( 'init', 'register_my_menus' );
 }
  ?>	
+```
